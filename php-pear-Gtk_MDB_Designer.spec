@@ -3,15 +3,16 @@
 %define         _subclass       Designer
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - An Gtk Database schema designer
 Summary(pl):	%{_pearname} - Oparty na GTK projektant schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	0.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	65bb0042a2476d19c8300c1479ebc63e
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	65bb0042a2476d19c8300c1479ebc63e
 URL:		http://pear.php.net/package/Gtk_MDB_Designer/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-gtk
