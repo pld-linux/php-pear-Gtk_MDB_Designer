@@ -43,7 +43,7 @@ Note: the primary aim is to generate SQL files, (so that I can get my
 work done) however it is eventually planned to support MDB schemas
 fully... - just a matter of time.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Graficzny projektant schematów baz danych, lu¼nie oparty na schemacie
