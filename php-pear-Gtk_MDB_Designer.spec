@@ -8,7 +8,7 @@ Summary:	%{_pearname} - an GTK+ Database schema designer
 Summary(pl):	%{_pearname} - oparty na GTK+ projektant schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -75,10 +75,11 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{,Interface}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{Designer,Interface}
 
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
 install %{_pearname}-%{version}/%{_subclass}/*.{php,glade} $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}/%{_subclass}/Designer/* $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Designer
 install %{_pearname}-%{version}/%{_subclass}/Interface/* $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Interface
 
 %clean
@@ -86,7 +87,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{php_pear_dir}/%{_class}
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*
+%{php_pear_dir}/%{_class}/%{_subclass}
