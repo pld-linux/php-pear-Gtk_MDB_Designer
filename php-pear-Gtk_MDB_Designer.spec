@@ -4,8 +4,8 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - an Gtk Database schema designer
-Summary(pl):	%{_pearname} - oparty na GTK projektant schematów baz danych
+Summary:	%{_pearname} - an GTK+ Database schema designer
+Summary(pl):	%{_pearname} - oparty na GTK+ projektant schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
