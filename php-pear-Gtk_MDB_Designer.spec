@@ -8,15 +8,15 @@ Summary:	%{_pearname} - an GTK+ Database schema designer
 Summary(pl):	%{_pearname} - oparty na GTK+ projektant schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	5
+Release:	5.3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	65bb0042a2476d19c8300c1479ebc63e
 URL:		http://pear.php.net/package/Gtk_MDB_Designer/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php4-gtk
-Requires:	php-pear
+Requires:	php-pear >= 4:1.0-8
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -71,20 +71,20 @@ schematów MDB... - to tylko kwestia czasu.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Designer/Interface
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/Designer/*.{php,glade} $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Designer
-install %{_pearname}-%{version}/Designer/Interface/* $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Designer/Interface
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc install.log
+%{php_pear_dir}/.registry/*.reg
+%dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/%{_subclass}/Designer.php
 %{php_pear_dir}/%{_class}/%{_subclass}/Designer
