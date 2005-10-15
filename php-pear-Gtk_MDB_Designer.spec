@@ -18,7 +18,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php4-gtk
 Requires:	php-common >= 3:4.3
 Requires:	php-pear >= 4:1.0-8
-Requires:	php-pear-MDB >= 1.1.1
+Requires:	php-pear-MDB >= 1:1.1.1
 Requires:	php-pear-XML_Parser >= 1.0.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
