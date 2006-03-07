@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	65bb0042a2476d19c8300c1479ebc63e
 URL:		http://pear.php.net/package/Gtk_MDB_Designer/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php4-gtk
 Requires:	php-common >= 3:4.3
