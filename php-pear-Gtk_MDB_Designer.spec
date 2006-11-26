@@ -8,7 +8,7 @@ Summary:	%{_pearname} - an GTK+ Database schema designer
 Summary(pl):	%{_pearname} - oparty na GTK+ projektant schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	7
+Release:	8
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,7 +17,7 @@ URL:		http://pear.php.net/package/Gtk_MDB_Designer/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php4-gtk
+Requires:	php(gtk)
 Requires:	php-common >= 3:4.3
 Requires:	php-pear >= 4:1.0-8
 Requires:	php-pear-MDB >= 1:1.1.1
@@ -32,8 +32,7 @@ schema, it features:
   database
 - add/delete tables
 - add/delete columns
-- support for NotNull, Indexes, Sequences, Unique Indexes and
-  defaults
+- support for NotNull, Indexes, Sequences, Unique Indexes and defaults
 - works totally in non-connected mode (eg. no database or setting up
   required)
 - stores in MDB like xml file
