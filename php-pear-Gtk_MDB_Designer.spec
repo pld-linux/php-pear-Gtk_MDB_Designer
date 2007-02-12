@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Designer
 
 Summary:	%{_pearname} - an GTK+ Database schema designer
-Summary(pl):	%{_pearname} - oparty na GTK+ projektant schematów baz danych
+Summary(pl.UTF-8):   %{_pearname} - oparty na GTK+ projektant schematÃ³w baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	8
@@ -49,28 +49,28 @@ fully... - just a matter of time.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Graficzny projektant schematów baz danych, lu¼nie oparty na schemacie
-MDB, pozwalaj±cy na:
-- przeci±ganie prostok±tów tabel po oknie
+%description -l pl.UTF-8
+Graficzny projektant schematÃ³w baz danych, luÅºnie oparty na schemacie
+MDB, pozwalajÄ…cy na:
+- przeciÄ…ganie prostokÄ…tÃ³w tabel po oknie
 - dodawanie/usuwanie tabel
 - dodawanie/usuwanie kolumn
-- obs³ugê atrybutów NotNull, indeksów, sekwencji, unikalnych indeksów
-  i domy¶lnych
-- dzia³anie w trybie bez po³±czenia (nie wymagaj±cym bezy danych ani
+- obsÅ‚ugÄ™ atrybutÃ³w NotNull, indeksÃ³w, sekwencji, unikalnych indeksÃ³w
+  i domyÅ›lnych
+- dziaÅ‚anie w trybie bez poÅ‚Ä…czenia (nie wymagajÄ…cym bezy danych ani
   konfiguracji)
 - zapis do pliku XML w stylu MDB
-- zapis do plików tworz±cych tabele SQL w dowolnej obs³ugiwanej bazie.
+- zapis do plikÃ³w tworzÄ…cych tabele SQL w dowolnej obsÅ‚ugiwanej bazie.
 
-Zrzuty ekranu dostêpne s± pod http://devel.akbkhome.com/Gtk_MDB/.
+Zrzuty ekranu dostÄ™pne sÄ… pod http://devel.akbkhome.com/Gtk_MDB/.
 
-Przysz³e rozszerzenia:
-- prawdziwe eksportowanie schematów MDB
-- zale¿no¶ci = z liniami itp.
+PrzyszÅ‚e rozszerzenia:
+- prawdziwe eksportowanie schematÃ³w MDB
+- zaleÅ¼noÅ›ci = z liniami itp.
 
-G³ównym celem jest generowanie plików SQL (co pozwoli autorowi
-wykonywaæ swoj± pracê), ale opcjonalnie planowana jest pe³na obs³uga
-schematów MDB... - to tylko kwestia czasu.
+GÅ‚Ã³wnym celem jest generowanie plikÃ³w SQL (co pozwoli autorowi
+wykonywaÄ‡ swojÄ… pracÄ™), ale opcjonalnie planowana jest peÅ‚na obsÅ‚uga
+schematÃ³w MDB... - to tylko kwestia czasu.
 
 Ta klasa ma w PEAR status: %{_status}.
 
