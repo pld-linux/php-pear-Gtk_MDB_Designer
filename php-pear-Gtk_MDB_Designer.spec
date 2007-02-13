@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Designer
 
 Summary:	%{_pearname} - an GTK+ Database schema designer
-Summary(pl.UTF-8):   %{_pearname} - oparty na GTK+ projektant schematów baz danych
+Summary(pl.UTF-8):	%{_pearname} - oparty na GTK+ projektant schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	8
