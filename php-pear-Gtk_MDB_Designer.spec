@@ -3,12 +3,11 @@
 %define		_subclass	MDB
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}_Designer
-
 Summary:	%{_pearname} - an GTK+ Database schema designer
 Summary(pl.UTF-8):	%{_pearname} - oparty na GTK+ projektant schematów baz danych
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	9
+Release:	10
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
